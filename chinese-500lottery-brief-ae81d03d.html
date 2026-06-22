@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>信息索引｜500彩票网官方 · 资料整理专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f2f3f7;
+      font-family: "PingFang SC", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: #1e1e2a;
+    }
+
+    .page {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- hero ---------- */
+    .hero {
+      background: linear-gradient(145deg, #141824 0%, #1e2538 90%);
+      padding: 68px 28px 56px;
+      border-radius: 0 0 48px 48px;
+      margin: 0 -24px 40px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(88, 130, 255, 0.08), transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero h1 {
+      font-size: 2.7rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #eef2fc;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #b4c2e0;
+      max-width: 680px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 20px;
+      line-height: 1.8;
+      font-weight: 350;
+    }
+
+    .hero .sub strong {
+      color: #d3defa;
+      font-weight: 500;
+    }
+
+    /* ---------- content area ---------- */
+    .content-card {
+      background: #ffffff;
+      border-radius: 32px;
+      padding: 40px 40px 34px;
+      margin-bottom: 36px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03);
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: #1a1e2e;
+      border-left: 5px solid #2f54eb;
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+
+    .section-title.secondary {
+      border-left-color: #5b6abf;
+      color: #202336;
+    }
+
+    .content-card p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      color: #2e3140;
+    }
+
+    .content-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .accent-link {
+      color: #2046d8;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #a0b4f0;
+      transition: border-bottom 0.2s, background 0.2s;
+      padding: 0 4px 1px;
+      border-radius: 4px;
+    }
+
+    .accent-link:hover {
+      border-bottom: 2px solid #1f3bb3;
+      background: #edf1fe;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+
+    .feature-cell {
+      flex: 1 1 200px;
+      background: #f6f8ff;
+      border-radius: 24px;
+      padding: 22px 18px;
+      transition: box-shadow 0.25s;
+      border: 1px solid #e5eaf5;
+    }
+
+    .feature-cell:hover {
+      box-shadow: 0 6px 14px rgba(36, 62, 176, 0.08);
+      border-color: #cbd6f0;
+    }
+
+    .feature-cell h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #192256;
+      margin-bottom: 6px;
+    }
+
+    .feature-cell p {
+      font-size: 0.96rem;
+      margin-bottom: 0;
+      color: #43475b;
+    }
+
+    .faq-mini {
+      background: #f9faff;
+      border-radius: 28px;
+      padding: 28px 30px;
+      margin: 28px 0 0;
+      border: 1px solid #e7ecfb;
+    }
+
+    .faq-mini summary {
+      font-weight: 550;
+      font-size: 1.08rem;
+      color: #1d274a;
+      cursor: pointer;
+      padding: 6px 0;
+    }
+
+    .faq-mini p {
+      margin: 12px 0 0 16px;
+      font-size: 0.98rem;
+      color: #3a3f58;
+    }
+
+    .faq-mini details:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    /* ---------- footer ---------- */
+    .page-foot {
+      text-align: center;
+      padding: 28px 12px 52px;
+      border-top: 1px solid #d8ddeb;
+      margin-top: 18px;
+    }
+
+    .page-foot .tip {
+      background: #eef2fc;
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 60px;
+      font-size: 1.05rem;
+      color: #192256;
+      letter-spacing: 0.3px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+
+    .page-foot .tip a {
+      color: #1a3bb3;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid #b3c6f0;
+    }
+
+    .page-foot .tip a:hover {
+      border-bottom: 2px solid #0f2c8a;
+    }
+
+    /* ---------- responsive ---------- */
+    @media (max-width: 720px) {
+      .hero {
+        padding: 48px 20px 40px;
+        margin: 0 -16px 32px;
+        border-radius: 0 0 32px 32px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .content-card {
+        padding: 28px 20px;
+        border-radius: 24px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        padding-left: 16px;
+      }
+
+      .feature-grid {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .feature-cell {
+        flex: 1 1 auto;
+      }
+
+      .faq-mini {
+        padding: 22px 18px;
+      }
+
+      .page-foot .tip {
+        display: block;
+        padding: 14px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .content-card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- hero 头图 -->
+    <header class="hero">
+      <h1>500彩票网 · 资料索引</h1>
+      <div class="sub">
+        <strong>专题信息整理</strong> — 从行业背景、平台脉络到信息查阅方式，一份克制的资料页。
+      </div>
+    </header>
+
+    <!-- 第一段：背景说明 -->
+    <section class="content-card">
+      <h2 class="section-title">资料背景与整理初衷</h2>
+      <p>
+        500彩票网（<a href="https://chinese-500lottery.com" class="accent-link">500彩票网官方</a>）在国内彩票信息领域拥有超过十年的发展历史。本次专题并非对平台功能的复述，而是从信息索引与资料整理角度出发，收集散见于公开报道、用户社区与备案信息中的背景片段，尝试为关注该平台的用户提供一份结构化的资料参考。
+      </p>
+      <p>
+        自早期以互联网彩票资讯形态起步，到经历行业调整与业务聚焦，该平台始终坚持将彩票信息与数据分析作为核心内容。在资料整理过程中，我们尤其关注其历史沿革、产品迭代节点以及面向彩民群体的信息呈现方式。
+      </p>
+    </section>
+
+    <!-- 第二段：特点与信息维度 -->
+    <section class="content-card">
+      <h2 class="section-title secondary">信息维度与平台特点</h2>
+      <p>
+        根据现有公开资料，可将信息维度大致分为三个板块：竞彩数据、数字彩走势以及资讯聚合。每个板块都承载了不同的用户习惯与查阅目的。例如，竞彩板块注重实时变动与对阵记录，数字彩则聚焦开奖历史与冷热分布——这些信息在长期积累下形成了可回溯的资料库。
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-cell">
+          <h3>数据归档</h3>
+          <p>开奖号码、走势图表、遗漏统计等均按年份及彩种分类，方便交叉引用。</p>
+        </div>
+        <div class="feature-cell">
+          <h3>资讯索引</h3>
+          <p>行业动态、政策解读与彩市分析文章按标签归类，便于回溯特定周期话题。</p>
+        </div>
+        <div class="feature-cell">
+          <h3>工具记录</h3>
+          <p>计算器、模拟选号与奖金试算等功能，在资料页中以说明文档形式留存版本变化。</p>
+        </div>
+      </div>
+
+      <p>
+        以上三点仅是索引框架的缩影。在实际使用中，用户往往根据自身关注点选择对应模块，而资料整理的意义正是将这种选择逻辑显性化。作为参考，我们建议初次接触者从历史开奖数据入手，逐步建立自己的信息查阅习惯。
+      </p>
+    </section>
+
+    <!-- 第三段：应用场景与FAQ摘要 -->
+    <section class="content-card">
+      <h2 class="section-title">常见应用场景与FAQ摘要</h2>
+      <p>
+        在资料整理过程中，我们发现用户经常就以下三类场景提出重复性问题：如何查找特定周期的开奖记录？不同彩种的数据更新时间是否一致？以及历史资讯的存档边界在哪里。针对这些场景，本专题尝试做摘要式回答。
+      </p>
+
+      <div class="faq-mini">
+        <details>
+          <summary>🔍 如何查找某一彩种近五年的开奖号码？</summary>
+          <p>大部分彩种在<a href="https://chinese-500lottery.com" class="accent-link">500彩票网官方</a>数据页均提供按年份/月份筛选功能。在资料索引中建议先选择彩种标签，再通过日历控件缩小范围。早期开奖数据（2015年以前）可能以图片或PDF存档，可直接在站内搜索框输入“年份+彩种”尝试定位。</p>
+        </details>
+        <details>
+          <summary>📅 资讯文章的最早存档时间是什么时候？</summary>
+          <p>根据可检索到的历史记录，资讯频道内容最早可追溯至2013年前后。部分早期文章因站点改版可能仅保留标题与摘要，完整内容需通过站内归档链接查看。如有特定文章需求，建议使用站内搜索结合时间筛选。</p>
+        </details>
+        <details>
+          <summary>🧩 数据更新频率是否有统一标准？</summary>
+          <p>竞彩类数据通常在比赛结束后30分钟内完成更新；数字彩（如双色球、大乐透）在官方开奖公告发布后同步。历史数据为静态存档，修改仅发生在数据勘误场景。具体彩种的更新说明可在对应数据页底部查阅备注。</p>
+        </details>
+      </div>
+
+      <p style="margin-top: 18px;">
+        以上FAQ摘要基于日常使用中收集的常见疑问，并非官方客服答复。如需更精确的解释，建议直接参考平台内各功能页的帮助提示。
+      </p>
+    </section>
+
+    <!-- 页尾访问提示 -->
+    <footer class="page-foot">
+      <div class="tip">
+        📘 资料索引页 · 更多信息可查阅 <a href="https://chinese-500lottery.com">500彩票网官方</a> 数据与资讯板块
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
